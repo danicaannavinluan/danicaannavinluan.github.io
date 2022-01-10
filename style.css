@@ -1,0 +1,253 @@
+@import url(https://fonts.google.com/specimen/Allura?query=allura#standard-styles);
+
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+p{
+	margin-bottom: 15px;
+	font-size: 14px; 
+	line-height: 20px;
+	color: #fff;
+}
+h1.title{
+	margin-bottom: 20px;
+	color: #444444;
+	font-size: 38px;
+}
+.btn a{
+	display: block;
+	width: 180px;
+	height: 35px;
+	border: 2px solid #fb2274;
+	line-height: 35px;
+	margin: 25px auto 0;
+	color: #fb2274;
+	text-align: center;
+}
+.main-container{
+	position: relative;
+}
+
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+}
+.logo a{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 32px;
+	color: #fb2274;
+}
+.navbar .navbar-items ul{
+	display: flex;
+}
+.navbar .navbar-items ul li{
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+.navbar .navbar-items ul li a{
+	color: #000000;
+	font-family: American Typewriter, serif;
+}
+.banner-image{
+	background: url("mm.png") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner-content{
+	text-align: center;
+	color: #fff;
+}
+.banner-content h1{
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 50px;
+	margin-bottom: 15px;
+	color: #000000;
+	font-family: Stencil Std, fantasy;
+}
+.banner-content span{
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 30px;
+	margin-bottom: 15px;
+	color: #fb2274;
+	font-family: Stencil Std, fantasy;
+}
+.about-image{
+	background: url("mm.png") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about{
+	padding: 5% 10%;
+	text-align: center;
+}
+
+.diff-photo{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+.diff-photo-item{
+	width: 30%;
+}
+.diff-photo-item img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.about p{
+	color: #000000;
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	height: 350px;
+	border: 1px solid black;
+	margin: 10px;
+	align-items: center;
+	text-align: justify;
+	padding: 10px;
+	border-radius: 15px;
+	background: linear-gradient(to top, rgb(255, 192, 203) 50%, white 50%);
+	background-size: 100% 200%;
+	transition: all .8s;
+}
+.box:hover{
+	background-position: left bottom;
+	color: white;
+	border: none;
+	box-shadow: 0 0 20px rgb(255, 192, 203);
+}
+.fambac-image{
+	background: url("mm.png") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fambac{
+	padding: 5% 10%;
+	text-align: center;
+}
+.fambac p{
+	color: #000000;
+	font-family: 'Josefin Sans';
+	font-size: 18px
+}
+.diff-pic{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+.diff-pic-item{
+	width: 30%;
+}
+.diff-pic-item img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.strength-weak-image{
+	background: url("mm.png") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.strength-weak{
+	padding: 5% 10%;
+	text-align: center
+}
+.strength-weak p{
+	color: #000000;
+	font-family: 'Josefin Sans';
+	font-size: 18px
+}
+.career-job-image{
+	background: url("mm.png") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.career-job{
+	padding: 5% 10%;
+	text-align: center;
+}
+.career-job p{
+	color: #000000;
+	font-family: 'Josefin Sans';
+	font-size: 18px
+}
+
+@media (max-width: 720px){
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+	.logo{
+		margin-bottom: 25px;
+	}
+	.navbar ul li{
+		margin-bottom: 5px;
+	}
+	.banner-content{
+		margin-top: 35px;
+	}
+}
+
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	background: #fb2274;
+	border-radius: 50%;
+}
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
